@@ -100,7 +100,7 @@ class ViewController: UIViewController, GMUClusterManagerDelegate, GMSMapViewDel
             while(true)
             {
                 let currentTime = Date().timeIntervalSince1970
-                let urlString = "http://10.10.4.46:5000/traffic/" + String(Int(currentTime*1000 - 500000))
+                let urlString = "http://10.10.4.46:5000/traffic/" + String(Int(currentTime*1000 - 5000))
                 print(urlString)
                 let url = URL(string: urlString)
                 URLSession.shared.dataTask(with:url!) { (data, response, error) in
@@ -120,7 +120,7 @@ class ViewController: UIViewController, GMUClusterManagerDelegate, GMSMapViewDel
                                     {
                                         color = UIColor.red
                                     }
-                                    else if(pedestrianCount>=15 && pedestrianCount < 50)
+                                    else if(pedestrianCount>=15 && pedestrianCount < 100)
                                     {
                                         color = UIColor.yellow
                                     }

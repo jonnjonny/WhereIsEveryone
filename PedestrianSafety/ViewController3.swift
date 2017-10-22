@@ -26,7 +26,7 @@ class ViewController3: UIViewController {
     }
     
     @IBAction func sliderChanged(_ sender: UISlider) {
-        timeLabel.text = String(Int(sender.value+8))
+        timeLabel.text = "Current Time + " + String(Int(sender.value)) + " Hour(s)"
         let currentTime = Date().timeIntervalSince1970
         let urlString = "http://10.10.4.46:5000/traffic/" + String(Int((currentTime*1000)+600000) + Int(sender.value*60000*60))
         print(urlString)
@@ -48,7 +48,7 @@ class ViewController3: UIViewController {
                             {
                                 color = UIColor.red
                             }
-                            else if(pedestrianCount>=15 && pedestrianCount < 50)
+                            else if(pedestrianCount>=15 && pedestrianCount < 80)
                             {
                                 color = UIColor.yellow
                             }
