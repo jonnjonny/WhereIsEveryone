@@ -1,24 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J6T-zL-S6Y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Predictions-->
+        <scene sceneID="lvD-dc-fIT">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController title="Predictions" id="d64-Qc-Nqv" customClass="ViewController3" customModule="PedestrianSafety" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hTa-pD-PsI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4P-EB-ts1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="562"/>
+                                <connections>
+                                    <segue destination="zUG-bD-M0D" kind="embed" identifier="embedSegue" id="IfP-pl-Fhj"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3P-Kd-vmz">
+                                <rect key="frame" x="166" y="565" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="BSM-vS-yLa">
+                                <rect key="frame" x="14" y="588" width="347" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="d64-Qc-Nqv" eventType="valueChanged" id="NHT-Ka-vw6"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BSM-vS-yLa" firstAttribute="bottom" secondItem="Msq-no-nqo" secondAttribute="bottom" id="8rf-2n-P7q"/>
+                            <constraint firstItem="BSM-vS-yLa" firstAttribute="leading" secondItem="Msq-no-nqo" secondAttribute="leading" constant="16" id="Bmd-9e-JV1"/>
+                            <constraint firstItem="N4P-EB-ts1" firstAttribute="trailing" secondItem="Msq-no-nqo" secondAttribute="trailing" id="ISv-hj-CDa"/>
+                            <constraint firstItem="h3P-Kd-vmz" firstAttribute="top" secondItem="N4P-EB-ts1" secondAttribute="bottom" constant="3" id="JFW-8b-zGF"/>
+                            <constraint firstItem="h3P-Kd-vmz" firstAttribute="centerX" secondItem="hTa-pD-PsI" secondAttribute="centerX" id="ONF-BG-uTt"/>
+                            <constraint firstItem="N4P-EB-ts1" firstAttribute="top" secondItem="hTa-pD-PsI" secondAttribute="top" id="bAV-F7-kP7"/>
+                            <constraint firstItem="Msq-no-nqo" firstAttribute="trailing" secondItem="BSM-vS-yLa" secondAttribute="trailing" constant="16" id="g7L-1Z-ltB"/>
+                            <constraint firstItem="BSM-vS-yLa" firstAttribute="top" secondItem="h3P-Kd-vmz" secondAttribute="bottom" constant="2" id="ivM-1G-wrH"/>
+                            <constraint firstItem="BSM-vS-yLa" firstAttribute="centerX" secondItem="hTa-pD-PsI" secondAttribute="centerX" id="pIO-WN-6yT"/>
+                            <constraint firstItem="h3P-Kd-vmz" firstAttribute="top" secondItem="N4P-EB-ts1" secondAttribute="bottom" constant="3" id="s4e-Ef-Cu1"/>
+                            <constraint firstItem="N4P-EB-ts1" firstAttribute="leading" secondItem="Msq-no-nqo" secondAttribute="leading" id="zct-bj-9UV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Msq-no-nqo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Prediction" id="05t-gY-2xq">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-16"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="slider" destination="BSM-vS-yLa" id="tef-eQ-8Ve"/>
+                        <outlet property="timeLabel" destination="h3P-Kd-vmz" id="BfX-9Q-12d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLG-to-sFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1333.5999999999999" y="499.70014992503752"/>
+        </scene>
+        <!--Real-Time Data-->
+        <scene sceneID="GxF-08-TVh">
+            <objects>
+                <viewController title="Real-Time Data" id="g8X-se-7uR" customClass="ViewController" customModule="PedestrianSafety" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TwC-PP-zbk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="y1U-Yd-b35"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Real-Time" id="VKg-43-gpm">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-16"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e75-wU-72O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1333" y="-165"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gTL-5B-bvd">
+            <objects>
+                <tabBarController id="J6T-zL-S6Y" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4GH-Ht-bL7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="g8X-se-7uR" kind="relationship" relationship="viewControllers" id="9ZJ-pO-A1q"/>
+                        <segue destination="d64-Qc-Nqv" kind="relationship" relationship="viewControllers" id="RDL-bW-ARk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSp-nD-tTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376" y="167"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="IFY-N8-aAZ">
+            <objects>
+                <viewController id="F7w-EZ-7Ct" customClass="ViewController2" customModule="PedestrianSafety" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rcQ-O4-ywF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PB8-aG-Ncq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-38" y="861"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="pSp-wi-ICZ">
+            <objects>
+                <viewController id="zUG-bD-M0D" customClass="ViewController2" customModule="PedestrianSafety" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="erz-Nt-Wve">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="562"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLg-JU-Gy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="1171"/>
         </scene>
     </scenes>
 </document>

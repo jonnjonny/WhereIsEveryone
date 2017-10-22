@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B632E591BFD118CE6635585 /* libPods-PedestrianSafety.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C54DF2F72149D63826E5EA4 /* libPods-PedestrianSafety.a */; };
 		AB296D7A1F9B456700119C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB296D791F9B456700119C0F /* AppDelegate.swift */; };
 		AB296D7C1F9B456700119C0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB296D7B1F9B456700119C0F /* ViewController.swift */; };
 		AB296D7F1F9B456700119C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB296D7D1F9B456700119C0F /* Main.storyboard */; };
 		AB296D811F9B456700119C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB296D801F9B456700119C0F /* Assets.xcassets */; };
 		AB296D841F9B456700119C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB296D821F9B456700119C0F /* LaunchScreen.storyboard */; };
+		AB296D8F1F9C6D3A00119C0F /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB296D8E1F9C6D3A00119C0F /* GoogleMaps.framework */; };
+		AB296D911F9C6D4300119C0F /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB296D901F9C6D4300119C0F /* GoogleMapsCore.framework */; };
+		AB296D931F9C6D5500119C0F /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB296D921F9C6D5400119C0F /* GoogleMapsBase.framework */; };
+		AB296D951F9C6D7100119C0F /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB296D941F9C6D7100119C0F /* GoogleMaps.bundle */; };
+		AB296D991F9CE67A00119C0F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB296D981F9CE67A00119C0F /* ViewController2.swift */; };
+		AB296D9D1F9CFDBB00119C0F /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB296D9C1F9CFDBB00119C0F /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		152E2FF8F89BBB4D759C73C1 /* Pods-PedestrianSafety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PedestrianSafety.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PedestrianSafety/Pods-PedestrianSafety.debug.xcconfig"; sourceTree = "<group>"; };
+		8C54DF2F72149D63826E5EA4 /* libPods-PedestrianSafety.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PedestrianSafety.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21C5FAF770F199B55098F7B /* Pods-PedestrianSafety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PedestrianSafety.release.xcconfig"; path = "Pods/Target Support Files/Pods-PedestrianSafety/Pods-PedestrianSafety.release.xcconfig"; sourceTree = "<group>"; };
 		AB296D761F9B456700119C0F /* PedestrianSafety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedestrianSafety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB296D791F9B456700119C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB296D7B1F9B456700119C0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,13 @@
 		AB296D801F9B456700119C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB296D831F9B456700119C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB296D851F9B456700119C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB296D8B1F9BCE5800119C0F /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		AB296D8E1F9C6D3A00119C0F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		AB296D901F9C6D4300119C0F /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
+		AB296D921F9C6D5400119C0F /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		AB296D941F9C6D7100119C0F /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		AB296D981F9CE67A00119C0F /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		AB296D9C1F9CFDBB00119C0F /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +46,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB296D8F1F9C6D3A00119C0F /* GoogleMaps.framework in Frameworks */,
+				AB296D931F9C6D5500119C0F /* GoogleMapsBase.framework in Frameworks */,
+				AB296D911F9C6D4300119C0F /* GoogleMapsCore.framework in Frameworks */,
+				7B632E591BFD118CE6635585 /* libPods-PedestrianSafety.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B645D4C10D72FC042FE01A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB296D921F9C6D5400119C0F /* GoogleMapsBase.framework */,
+				AB296D901F9C6D4300119C0F /* GoogleMapsCore.framework */,
+				AB296D8E1F9C6D3A00119C0F /* GoogleMaps.framework */,
+				8C54DF2F72149D63826E5EA4 /* libPods-PedestrianSafety.a */,
+				AB296D941F9C6D7100119C0F /* GoogleMaps.bundle */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB296D6D1F9B456700119C0F = {
 			isa = PBXGroup;
 			children = (
 				AB296D781F9B456700119C0F /* PedestrianSafety */,
 				AB296D771F9B456700119C0F /* Products */,
+				E86EBAF58A44DECA9C68EF67 /* Pods */,
+				0B645D4C10D72FC042FE01A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +91,24 @@
 			children = (
 				AB296D791F9B456700119C0F /* AppDelegate.swift */,
 				AB296D7B1F9B456700119C0F /* ViewController.swift */,
+				AB296D981F9CE67A00119C0F /* ViewController2.swift */,
 				AB296D7D1F9B456700119C0F /* Main.storyboard */,
 				AB296D801F9B456700119C0F /* Assets.xcassets */,
 				AB296D821F9B456700119C0F /* LaunchScreen.storyboard */,
 				AB296D851F9B456700119C0F /* Info.plist */,
+				AB296D8B1F9BCE5800119C0F /* Utility.h */,
+				AB296D9C1F9CFDBB00119C0F /* ViewController3.swift */,
 			);
 			path = PedestrianSafety;
+			sourceTree = "<group>";
+		};
+		E86EBAF58A44DECA9C68EF67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				152E2FF8F89BBB4D759C73C1 /* Pods-PedestrianSafety.debug.xcconfig */,
+				A21C5FAF770F199B55098F7B /* Pods-PedestrianSafety.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB296D881F9B456700119C0F /* Build configuration list for PBXNativeTarget "PedestrianSafety" */;
 			buildPhases = (
+				C064DFE9C867FAEA024D4A5F /* [CP] Check Pods Manifest.lock */,
 				AB296D721F9B456700119C0F /* Sources */,
 				AB296D731F9B456700119C0F /* Frameworks */,
 				AB296D741F9B456700119C0F /* Resources */,
+				AA7B52AC71BFB81F0C307E03 /* [CP] Embed Pods Frameworks */,
+				CAF7FCE5EFA87EFB118B4D9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,10 +176,66 @@
 				AB296D841F9B456700119C0F /* LaunchScreen.storyboard in Resources */,
 				AB296D811F9B456700119C0F /* Assets.xcassets in Resources */,
 				AB296D7F1F9B456700119C0F /* Main.storyboard in Resources */,
+				AB296D951F9C6D7100119C0F /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA7B52AC71BFB81F0C307E03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PedestrianSafety/Pods-PedestrianSafety-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C064DFE9C867FAEA024D4A5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PedestrianSafety-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAF7FCE5EFA87EFB118B4D9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PedestrianSafety/Pods-PedestrianSafety-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PedestrianSafety/Pods-PedestrianSafety-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB296D721F9B456700119C0F /* Sources */ = {
@@ -138,6 +244,8 @@
 			files = (
 				AB296D7C1F9B456700119C0F /* ViewController.swift in Sources */,
 				AB296D7A1F9B456700119C0F /* AppDelegate.swift in Sources */,
+				AB296D9D1F9CFDBB00119C0F /* ViewController3.swift in Sources */,
+				AB296D991F9CE67A00119C0F /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +380,22 @@
 		};
 		AB296D891F9B456700119C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 152E2FF8F89BBB4D759C73C1 /* Pods-PedestrianSafety.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GJZY9WL26P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PedestrianSafety/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jonathan.PedestrianSafety;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = PedestrianSafety/Utility.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,13 +403,22 @@
 		};
 		AB296D8A1F9B456700119C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A21C5FAF770F199B55098F7B /* Pods-PedestrianSafety.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GJZY9WL26P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PedestrianSafety/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jonathan.PedestrianSafety;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = PedestrianSafety/Utility.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
